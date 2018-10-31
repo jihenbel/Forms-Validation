@@ -1,0 +1,26 @@
+.bodytype { background-color: #413a50;
+   margin:30px 0px 30px;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.inputype { background-color:#2b293a !important;
+   width: 300px !important;
+   color: white !important;}
+.text 
+{ color: white;
+  font-weight: bold;
+}
+
+.buttontype {text-align: center;
+  width:300px;
+  background-color:#2b293a !important;
+  color: white !important; border-color: white !important;
+  margin-bottom: 10px;
+  font-weight: bold !important;
+}
+
+.buttontype:hover {background-color: #6c757d !important;}
+
+div:nth-child(5) {margin-bottom: 40px;}
