@@ -1,24 +1,37 @@
+document.querySelector(".click").addEventListener('click' , function verif () {
+    if (inputsempty()) {
+        return alert ("input empty!");
+    } else {
+        ValidateEmail();
+        myFunction();
+    }
+    })
 
-document.querySelector(".click").addEventListener('click' ,function inputsempty()
+
+
+function inputsempty()
     {
-    var inputs=document.getElementsByClassName("inputype")
-    for (let i=0; i<inputs.length; i++) {
-    if (inputs[i].value ==='')
-    {
-        return alert ("input empty!")
-    }}})
+        var inputs=document.getElementsByClassName("inputype")
+        for (let i=0; i<inputs.length; i++) {
+            if (inputs[i].value ==='')
+            {
+                return true
+            }
+        }
+        return false
+    }
 
-
-document.querySelector(".click").addEventListener('click' ,function ValidateEmail()
+  
+function ValidateEmail()
     {
     var mail=document.querySelector(".mail").value
     if ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))===false)
     {
         alert("You have entered an invalid email address!")
-    }})
+    }}
 
 
-    document.querySelector(".click").addEventListener('click' ,function myFunction() {
+function myFunction() {
         var password=''
         var lowerCaseCharacter = /(?=.*[a-z])/
         var numbers= /(?=.*\d)/
@@ -35,5 +48,5 @@ document.querySelector(".click").addEventListener('click' ,function ValidateEmai
 
         else if (numbers.test(password)===false)
             alert ("Password must contain numbers")
-        })
+        }
     
